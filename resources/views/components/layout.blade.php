@@ -14,7 +14,7 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-black text-white">
+<body class="bg-black text-white pb-20">
 <body class="bg-black text-white font-hanken-grotesk">
 <div class="px-10">
 <nav class="flex justify-between items-center py-4 border-b border-white/10">
