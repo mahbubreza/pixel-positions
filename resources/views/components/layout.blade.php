@@ -30,10 +30,24 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
 <a href="#">Salaries</a>
 <a href="#">Companies</a>
 </div>
+@auth
+<div class="space-x-6 font-bold flex">
+    <a href="">Post a Job</a>
+    <form method="POST" action="/logout">
+        @csrf
+        @method('DELETE')
+        <button>Logout</button>
+    </form>
+</div>  
+@endauth
 
-<div>
-<a href="">Post a Job</a>
+@guest
+<div class="space-x-6 font-bold">
+    <a href="/register">Register</a>
+    <a href="/login">Login</a>
 </div>
+@endguest
+
 </nav>
 
 <main class="mt-10 max-w-[986px] mx-auto">
